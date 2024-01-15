@@ -1,0 +1,21 @@
+.header{
+    background: white;
+    z-index: 2;
+    font-family: "Shrikhand", cursive;
+    
+    height: 6rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.header_lieu{
+    display: flex;
+    justify-content: center;
+    font-size: $base-font-size;
+    font-family: $base-font-family;
+    font-weight: 500 ;
+   
+}
