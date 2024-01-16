@@ -121,6 +121,7 @@ p {
   }
 }
 
+/*Mixin for pseudo-elements*/
 main {
   width: 100%;
   object-fit: cover;
@@ -394,4 +395,6 @@ li {
 a {
   text-decoration: none;
   color: inherit;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

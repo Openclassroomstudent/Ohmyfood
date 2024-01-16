@@ -1,0 +1,55 @@
+@use "../utils/placeholders" as *;
+@use "../utils/variables" as *;
+@use "../base/typography" as *;
+
+/*header*/
+
+.header-shadow {
+  position: relative;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  @media (min-width: 768px) {
+    box-shadow: none;
+  }
+}
+.header {
+  width: 100%;
+  @extend %flex-column-center;
+  @media (min-width: 768px) {
+    height: 6rem;
+    justify-content: center;
+  }
+  &__logo {
+    width: 40%;
+    max-width: 10.12rem;
+    margin: 0.88rem 0;
+  }
+  &__location {
+    width: 100%;
+    @extend %flex-row-center;
+    height: 3.12rem;
+    background: $location-bg-color;
+    font-family: $text-font;
+    color: $footer-bg;
+    font-weight: 500;
+    gap: 1.06rem;
+    & input {
+      color: $footer-bg;
+      font-size: 1rem;
+      width: 6.81rem;
+      background: transparent;
+      border: none;
+      outline: none;
+    }
+  }
+  & .fa-arrow-left {
+    position: absolute;
+    top: 0.5rem;
+    left: 0;
+    padding: 0.3rem 0 0rem 1rem;
+    color: $footer-bg;
+
+    @media (min-width: 768px) {
+      top: 2.4rem;
+    }
+  }
+}
