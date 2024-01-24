@@ -1,0 +1,40 @@
+@use "../utils/keyframes" as *;
+@use "../utils/variables" as *;
+@use "../utils/placeholders" as *;
+@use "../base/typography" as *;
+
+/* loader */
+
+.loader {
+  @extend %flex-row-center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  font-family: $title-font;
+  background: white;
+  animation: hide-loader 3000ms forwards; /*fait disparaitre le loader*/
+  margin: 0;
+  overflow: hidden;
+
+  /*Style et animation des lettres*/
+
+  &__lettre {
+    @extend %flex-row-center;
+    font-size: 2rem;
+    color: #9356dc;
+    letter-spacing: 1rem;
+    animation: flash 3000ms, crescendo 3000ms;
+    @media (min-width: 768px) {
+      font-size: 5rem;
+    }
+    @for $i from 1 through 8 {
+      &--#{$i} {
+        animation-delay: 0.1s * $i;
+      }
+    }
+  }
+}

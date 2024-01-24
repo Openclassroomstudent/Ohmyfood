@@ -52,4 +52,6 @@
       top: 2.4rem;
     }
   }
+  &__hero {
+    @extend %flex-column-center;
 }
