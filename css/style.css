@@ -961,4 +961,6 @@ main {
 }
 .Heart input:not(:checked) + .Heart__likeButton .fa-heart {
   animation: fadeIn 300ms ease-in forwards;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
