@@ -665,6 +665,7 @@ a {
   font: var(--fa-font-solid);
   -webkit-font-smoothing: antialiased;
   -webkit-background-clip: text;
+  background-clip: text;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -948,6 +949,7 @@ main {
   background: linear-gradient(13deg, #9356dc 2.44%, #ff79da 123.93%);
   -webkit-font-smoothing: antialiased;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .Heart__likeButton .fa-heart {
@@ -961,6 +963,4 @@ main {
 }
 .Heart input:not(:checked) + .Heart__likeButton .fa-heart {
   animation: fadeIn 300ms ease-in forwards;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

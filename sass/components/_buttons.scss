@@ -85,6 +85,7 @@
     background: $button-gradient-1;
     -webkit-font-smoothing: antialiased;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   &__likeButton .fa-heart {
