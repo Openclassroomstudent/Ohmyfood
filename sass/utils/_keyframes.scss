@@ -41,6 +41,17 @@
       opacity: 0;
     }
   }
+
+  // Animation pour display none les sections de la page d'accueil au début 
+  @keyframes invisibleToVisible {
+    from{
+      display: none !important;
+    }
+    to {
+      display: flex !important;
+    }
+  }
+  
   
   /*Animation Bouton like*/
   
